@@ -1,0 +1,6 @@
+algorithm,config,seed,evaluated,nominal reached %,nominal lifted %,nominal success %,training randomisation success %,heavy (mass x2) success %,slippery (friction x0.5) success %,large (size x1.2) success %,small (size x0.8) success %,tray 3 items: per-item %,tray 3 items: whole %,tray 4 items: per-item %,tray 4 items: whole %,dense tray 3 items: per-item %,dense tray 3 items: whole %,dense tray 4 items: per-item %,dense tray 4 items: whole %,steps per success
+PPO + norm,PPO_small_lr,31,summary,82.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+PPO + norm,PPO_small_lr,32,summary,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+PPO + norm,PPO_small_lr,33,summary,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+PPO + norm,PPO_small_lr,34,summary,68.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+PPO + norm,PPO_small_lr,35,summary,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,

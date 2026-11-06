@@ -1,0 +1,13 @@
+pybullet build time: Oct  7 2026 13:49:58
+00:06:20 PPO final: 5 runs to do (PPO_small_lr seed 31, PPO_small_lr seed 32, PPO_small_lr seed 33, PPO_small_lr seed 34, PPO_small_lr seed 35)
+00:06:20 started: PPO_small_lr_seed31 | running 1 | free 3.9 GB
+00:07:20 started: PPO_small_lr_seed32 | running 2 | free 3.8 GB
+00:08:20 started: PPO_small_lr_seed33 | running 3 | free 3.7 GB
+00:09:20 started: PPO_small_lr_seed34 | running 4 | free 3.3 GB
+00:10:21 started: PPO_small_lr_seed35 | running 5 | free 3.1 GB
+02:04:14 done: PPO_small_lr_seed32 (exit 0) | free 4.0 GB
+02:05:04 done: PPO_small_lr_seed31 (exit 0) | free 4.1 GB
+02:09:54 done: PPO_small_lr_seed33 (exit 0) | free 3.7 GB
+02:12:40 done: PPO_small_lr_seed34 (exit 0) | free 3.7 GB
+02:13:30 done: PPO_small_lr_seed35 (exit 0) | free 4.1 GB
+02:13:35 finished in 127 min

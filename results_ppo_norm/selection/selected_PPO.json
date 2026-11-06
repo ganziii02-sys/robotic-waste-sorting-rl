@@ -1,0 +1,21 @@
+{
+  "selected": "PPO_small_lr",
+  "rule": "mean over training seeds 21-23 of selection-episode success, then lift, then reward",
+  "means": {
+    "PPO_small_lr": {
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "mean reward": 0.22434401386910682
+    },
+    "PPO_default_like": {
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "mean reward": -0.9368947407051545
+    },
+    "PPO_more_exploration": {
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "mean reward": -1.4531528686996513
+    }
+  }
+}

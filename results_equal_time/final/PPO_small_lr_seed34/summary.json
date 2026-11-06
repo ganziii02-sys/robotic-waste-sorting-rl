@@ -1,0 +1,1239 @@
+{
+  "protocol": "3H-final-v2",
+  "smoke test (not a result)": false,
+  "config": "PPO_small_lr",
+  "algorithm": "PPO",
+  "observation and reward normalisation": false,
+  "equal-time budget (4M steps)": true,
+  "settings": {
+    "learning_rate": 0.0001,
+    "n_steps": 512,
+    "batch_size": 128,
+    "n_epochs": 10,
+    "gamma": 0.98,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.0
+  },
+  "stage": "final",
+  "seed": 34,
+  "steps": 4001792,
+  "training minutes": 105.9048421242997,
+  "test seeds": [
+    3000,
+    3049
+  ],
+  "machine": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "processor": "arm64",
+    "python": "3.11.16",
+    "pybullet": "3.2.7",
+    "panda-gym": "3.0.7",
+    "stable-baselines3": "2.9.0",
+    "gymnasium": "1.3.0",
+    "torch": "2.14.1",
+    "numpy": "1.26.4"
+  },
+  "curriculum stages passed": [
+    {
+      "passed": "above_bin",
+      "own step": 2294
+    }
+  ],
+  "test: nominal": {
+    "success %": 0.0,
+    "reached %": 98.0,
+    "lifted %": 0.0,
+    "failure %": 0.0,
+    "failed grasp %": 98.0,
+    "mean reward": 0.6298402362025236,
+    "mean length": 100.0,
+    "regrasps/ep": 0.0,
+    "success by item %": {
+      "004_sugar_box": 0.0,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 0.0,
+      "010_potted_meat_can": 0.0,
+      "065-a_cups": 0.0,
+      "065-c_cups": 0.0
+    },
+    "outcomes": {
+      "timeout": 50
+    },
+    "movement (successful episodes)": null,
+    "movement (all episodes)": {
+      "path m": 0.7024731745952552,
+      "gripper switches": 1.38
+    }
+  },
+  "selection: nominal (seeds 1000-1049)": {
+    "success %": 0.0,
+    "reached %": 98.0,
+    "lifted %": 0.0,
+    "failure %": 0.0,
+    "failed grasp %": 98.0,
+    "mean reward": 0.4277386957751391,
+    "mean length": 100.0,
+    "regrasps/ep": 0.0,
+    "success by item %": {
+      "004_sugar_box": 0.0,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 0.0,
+      "010_potted_meat_can": 0.0,
+      "065-a_cups": 0.0,
+      "065-c_cups": 0.0
+    },
+    "outcomes": {
+      "timeout": 50
+    },
+    "movement (successful episodes)": null,
+    "movement (all episodes)": {
+      "path m": 0.636150185339349,
+      "gripper switches": 1.38
+    }
+  },
+  "test: training randomisation": {
+    "success %": 0.0,
+    "reached %": 96.0,
+    "lifted %": 0.0,
+    "failure %": 0.0,
+    "failed grasp %": 96.0,
+    "mean reward": 0.633065860304303,
+    "mean length": 100.0,
+    "regrasps/ep": 0.0,
+    "success by item %": {
+      "004_sugar_box": 0.0,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 0.0,
+      "010_potted_meat_can": 0.0,
+      "065-a_cups": 0.0,
+      "065-c_cups": 0.0
+    },
+    "outcomes": {
+      "timeout": 50
+    },
+    "movement (successful episodes)": null,
+    "movement (all episodes)": {
+      "path m": 0.6335987811815028,
+      "gripper switches": 1.86
+    }
+  },
+  "test: heavy (mass x2)": {
+    "success %": 0.0,
+    "reached %": 98.0,
+    "lifted %": 0.0,
+    "failure %": 0.0,
+    "failed grasp %": 98.0,
+    "mean reward": 0.6323130476315096,
+    "mean length": 100.0,
+    "regrasps/ep": 0.0,
+    "success by item %": {
+      "004_sugar_box": 0.0,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 0.0,
+      "010_potted_meat_can": 0.0,
+      "065-a_cups": 0.0,
+      "065-c_cups": 0.0
+    },
+    "outcomes": {
+      "timeout": 50
+    },
+    "movement (successful episodes)": null,
+    "movement (all episodes)": {
+      "path m": 0.6988439413357369,
+      "gripper switches": 1.42
+    }
+  },
+  "test: slippery (friction x0.5)": {
+    "success %": 0.0,
+    "reached %": 98.0,
+    "lifted %": 0.0,
+    "failure %": 0.0,
+    "failed grasp %": 98.0,
+    "mean reward": 0.6470175292971263,
+    "mean length": 100.0,
+    "regrasps/ep": 0.0,
+    "success by item %": {
+      "004_sugar_box": 0.0,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 0.0,
+      "010_potted_meat_can": 0.0,
+      "065-a_cups": 0.0,
+      "065-c_cups": 0.0
+    },
+    "outcomes": {
+      "timeout": 50
+    },
+    "movement (successful episodes)": null,
+    "movement (all episodes)": {
+      "path m": 0.7045152998840066,
+      "gripper switches": 0.9
+    }
+  },
+  "test: large (size x1.2)": {
+    "success %": 0.0,
+    "reached %": 100.0,
+    "lifted %": 0.0,
+    "failure %": 0.0,
+    "failed grasp %": 100.0,
+    "mean reward": 0.5053193142034326,
+    "mean length": 100.0,
+    "regrasps/ep": 0.0,
+    "success by item %": {
+      "004_sugar_box": 0.0,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 0.0,
+      "010_potted_meat_can": 0.0,
+      "065-a_cups": 0.0,
+      "065-c_cups": 0.0
+    },
+    "outcomes": {
+      "timeout": 50
+    },
+    "movement (successful episodes)": null,
+    "movement (all episodes)": {
+      "path m": 0.7386477115742744,
+      "gripper switches": 1.28
+    }
+  },
+  "test: small (size x0.8)": {
+    "success %": 0.0,
+    "reached %": 82.0,
+    "lifted %": 0.0,
+    "failure %": 0.0,
+    "failed grasp %": 82.0,
+    "mean reward": 0.7448861261782966,
+    "mean length": 100.0,
+    "regrasps/ep": 0.0,
+    "success by item %": {
+      "004_sugar_box": 0.0,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 0.0,
+      "010_potted_meat_can": 0.0,
+      "065-a_cups": 0.0,
+      "065-c_cups": 0.0
+    },
+    "outcomes": {
+      "timeout": 50
+    },
+    "movement (successful episodes)": null,
+    "movement (all episodes)": {
+      "path m": 0.7671362901999643,
+      "gripper switches": 1.4
+    }
+  },
+  "tray clearing (20 trays, nominal)": {
+    "3 items": {
+      "per-item success %": 0.0,
+      "whole-tray success %": 0.0,
+      "items sorted per tray": 0.0,
+      "items attempted per tray": 2.9,
+      "items placed per tray": 3.0
+    },
+    "4 items": {
+      "per-item success %": 0.0,
+      "whole-tray success %": 0.0,
+      "items sorted per tray": 0.0,
+      "items attempted per tray": 3.9,
+      "items placed per tray": 4.0
+    }
+  },
+  "dense tray clearing (20 trays, nominal)": {
+    "3 items": {
+      "per-item success %": 0.0,
+      "whole-tray success %": 0.0,
+      "items sorted per tray": 0.0,
+      "items attempted per tray": 2.85,
+      "items placed per tray": 3.0
+    },
+    "4 items": {
+      "per-item success %": 0.0,
+      "whole-tray success %": 0.0,
+      "items sorted per tray": 0.0,
+      "items attempted per tray": 3.5,
+      "items placed per tray": 4.0
+    }
+  },
+  "checkpoint test success (nominal)": [
+    {
+      "steps": 25000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 6.0
+    },
+    {
+      "steps": 50000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 75000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 100000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 125000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 150000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 175000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 200000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 225000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 250000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 275000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 300000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 325000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 350000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 375000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 400000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 425000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 2.0
+    },
+    {
+      "steps": 450000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 2.0
+    },
+    {
+      "steps": 475000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 2.0
+    },
+    {
+      "steps": 500000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 2.0
+    },
+    {
+      "steps": 525000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 2.0
+    },
+    {
+      "steps": 550000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 18.0
+    },
+    {
+      "steps": 575000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 12.0
+    },
+    {
+      "steps": 600000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 32.0
+    },
+    {
+      "steps": 625000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 12.0
+    },
+    {
+      "steps": 650000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 24.0
+    },
+    {
+      "steps": 675000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 20.0
+    },
+    {
+      "steps": 700000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 36.0
+    },
+    {
+      "steps": 725000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 52.0
+    },
+    {
+      "steps": 750000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 57.99999999999999
+    },
+    {
+      "steps": 775000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 76.0
+    },
+    {
+      "steps": 800000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 74.0
+    },
+    {
+      "steps": 825000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 72.0
+    },
+    {
+      "steps": 850000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 80.0
+    },
+    {
+      "steps": 875000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 84.0
+    },
+    {
+      "steps": 900000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 62.0
+    },
+    {
+      "steps": 925000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 64.0
+    },
+    {
+      "steps": 950000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 72.0
+    },
+    {
+      "steps": 975000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 80.0
+    },
+    {
+      "steps": 1000000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 82.0
+    },
+    {
+      "steps": 1025000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 78.0
+    },
+    {
+      "steps": 1050000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 66.0
+    },
+    {
+      "steps": 1075000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 72.0
+    },
+    {
+      "steps": 1100000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 52.0
+    },
+    {
+      "steps": 1125000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 40.0
+    },
+    {
+      "steps": 1150000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 34.0
+    },
+    {
+      "steps": 1175000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 50.0
+    },
+    {
+      "steps": 1200000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 42.0
+    },
+    {
+      "steps": 1225000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 44.0
+    },
+    {
+      "steps": 1250000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 62.0
+    },
+    {
+      "steps": 1275000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 64.0
+    },
+    {
+      "steps": 1300000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 62.0
+    },
+    {
+      "steps": 1325000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 54.0
+    },
+    {
+      "steps": 1350000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 64.0
+    },
+    {
+      "steps": 1375000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 46.0
+    },
+    {
+      "steps": 1400000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 52.0
+    },
+    {
+      "steps": 1425000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 54.0
+    },
+    {
+      "steps": 1450000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 56.00000000000001
+    },
+    {
+      "steps": 1475000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 60.0
+    },
+    {
+      "steps": 1500000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 66.0
+    },
+    {
+      "steps": 1525000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 76.0
+    },
+    {
+      "steps": 1550000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 72.0
+    },
+    {
+      "steps": 1575000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 80.0
+    },
+    {
+      "steps": 1600000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 80.0
+    },
+    {
+      "steps": 1625000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 74.0
+    },
+    {
+      "steps": 1650000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 76.0
+    },
+    {
+      "steps": 1675000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 64.0
+    },
+    {
+      "steps": 1700000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 66.0
+    },
+    {
+      "steps": 1725000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 60.0
+    },
+    {
+      "steps": 1750000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 62.0
+    },
+    {
+      "steps": 1775000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 66.0
+    },
+    {
+      "steps": 1800000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 57.99999999999999
+    },
+    {
+      "steps": 1825000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 62.0
+    },
+    {
+      "steps": 1850000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 78.0
+    },
+    {
+      "steps": 1875000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 74.0
+    },
+    {
+      "steps": 1900000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 74.0
+    },
+    {
+      "steps": 1925000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 74.0
+    },
+    {
+      "steps": 1950000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 80.0
+    },
+    {
+      "steps": 1975000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 78.0
+    },
+    {
+      "steps": 2000000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 66.0
+    },
+    {
+      "steps": 2025000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 56.00000000000001
+    },
+    {
+      "steps": 2050000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 64.0
+    },
+    {
+      "steps": 2075000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 70.0
+    },
+    {
+      "steps": 2100000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 80.0
+    },
+    {
+      "steps": 2125000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 80.0
+    },
+    {
+      "steps": 2150000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 72.0
+    },
+    {
+      "steps": 2175000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 68.0
+    },
+    {
+      "steps": 2200000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 64.0
+    },
+    {
+      "steps": 2225000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 76.0
+    },
+    {
+      "steps": 2250000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 76.0
+    },
+    {
+      "steps": 2275000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 78.0
+    },
+    {
+      "steps": 2300000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 64.0
+    },
+    {
+      "steps": 2325000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 68.0
+    },
+    {
+      "steps": 2350000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 74.0
+    },
+    {
+      "steps": 2375000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 70.0
+    },
+    {
+      "steps": 2400000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 82.0
+    },
+    {
+      "steps": 2425000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 74.0
+    },
+    {
+      "steps": 2450000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 82.0
+    },
+    {
+      "steps": 2475000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 76.0
+    },
+    {
+      "steps": 2500000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 88.0
+    },
+    {
+      "steps": 2525000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 80.0
+    },
+    {
+      "steps": 2550000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 82.0
+    },
+    {
+      "steps": 2575000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 86.0
+    },
+    {
+      "steps": 2600000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 92.0
+    },
+    {
+      "steps": 2625000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 96.0
+    },
+    {
+      "steps": 2650000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 90.0
+    },
+    {
+      "steps": 2675000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 96.0
+    },
+    {
+      "steps": 2700000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 90.0
+    },
+    {
+      "steps": 2725000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 92.0
+    },
+    {
+      "steps": 2750000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 2775000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 92.0
+    },
+    {
+      "steps": 2800000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 86.0
+    },
+    {
+      "steps": 2825000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 2850000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 2875000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 96.0
+    },
+    {
+      "steps": 2900000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 2925000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 2950000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 2975000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3000000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 96.0
+    },
+    {
+      "steps": 3025000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3050000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3075000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3100000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3125000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3150000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3175000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3200000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3225000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3250000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3275000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3300000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3325000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3350000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3375000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 3400000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 3425000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 3450000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 96.0
+    },
+    {
+      "steps": 3475000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3500000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 3525000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 3550000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 3575000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3600000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3625000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3650000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3675000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3700000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3725000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3750000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3775000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 88.0
+    },
+    {
+      "steps": 3800000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 3825000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 96.0
+    },
+    {
+      "steps": 3850000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3875000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 94.0
+    },
+    {
+      "steps": 3900000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3925000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 100.0
+    },
+    {
+      "steps": 3950000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 3975000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 98.0
+    },
+    {
+      "steps": 4000000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 96.0
+    }
+  ],
+  "test success from curriculum starts (30 seeds)": {
+    "above_bin": 0.0,
+    "in_hand": 0.0,
+    "pre_grasp": 0.0,
+    "above_item": 0.0,
+    "above_item_turn": 0.0
+  },
+  "first close next to the item (nominal test)": {
+    "episodes with a close next to the item": 5,
+    "median yaw error deg (non-round items)": 17.114262327626673,
+    "median xy offset cm": 7.120212459664496,
+    "median height error cm": 3.303439357137372
+  }
+}

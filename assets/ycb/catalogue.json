@@ -1,0 +1,65 @@
+{
+  "006_mustard_bottle": {
+    "category": "plastic",
+    "mass_kg": 0.603,
+    "size_m": [
+      0.0972,
+      0.0666,
+      0.1913
+    ]
+  },
+  "065-a_cups": {
+    "category": "plastic",
+    "mass_kg": 0.013,
+    "size_m": [
+      0.0571,
+      0.0574,
+      0.0615
+    ]
+  },
+  "065-c_cups": {
+    "category": "plastic",
+    "mass_kg": 0.017,
+    "size_m": [
+      0.065,
+      0.0651,
+      0.0666
+    ]
+  },
+  "004_sugar_box": {
+    "category": "paper",
+    "mass_kg": 0.514,
+    "size_m": [
+      0.0495,
+      0.0942,
+      0.176
+    ]
+  },
+  "009_gelatin_box": {
+    "category": "paper",
+    "mass_kg": 0.097,
+    "size_m": [
+      0.0894,
+      0.1011,
+      0.0301
+    ]
+  },
+  "005_tomato_soup_can": {
+    "category": "metal",
+    "mass_kg": 0.349,
+    "size_m": [
+      0.0679,
+      0.0677,
+      0.1019
+    ]
+  },
+  "010_potted_meat_can": {
+    "category": "metal",
+    "mass_kg": 0.37,
+    "size_m": [
+      0.1021,
+      0.0601,
+      0.0835
+    ]
+  }
+}

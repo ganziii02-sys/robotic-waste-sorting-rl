@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="010_potted_meat_can">
+  <link name="baseLink">
+    <contact><lateral_friction value="0.8"/><rolling_friction value="0.001"/><spinning_friction value="0.001"/></contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.03278 -0.02655 0.03858"/>
+      <mass value="0.37"/>
+      <inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4"/>
+    </inertial>
+    <visual><geometry><mesh filename="textured.obj" scale="1 1 1"/></geometry></visual>
+    <collision><geometry><mesh filename="collision.obj" scale="1 1 1"/></geometry></collision>
+  </link>
+</robot>

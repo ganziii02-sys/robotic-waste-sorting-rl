@@ -1,0 +1,21 @@
+{
+  "selected": "SAC_robotics_gamma",
+  "rule": "mean over training seeds 21-23 of selection-episode success, then lift, then reward",
+  "means": {
+    "SAC_robotics_gamma": {
+      "success %": 95.33333333333333,
+      "lifted %": 99.33333333333333,
+      "mean reward": 13.77225807175075
+    },
+    "SAC_more_exploration": {
+      "success %": 42.666666666666664,
+      "lifted %": 50.0,
+      "mean reward": 5.872258384161065
+    },
+    "SAC_default_like": {
+      "success %": 0.0,
+      "lifted %": 6.0,
+      "mean reward": -3.527381605412236
+    }
+  }
+}

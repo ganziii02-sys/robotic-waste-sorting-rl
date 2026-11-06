@@ -1,0 +1,21 @@
+{
+  "selected": "TD3_robotics_gamma",
+  "rule": "mean over training seeds 21-23 of selection-episode success, then lift, then reward",
+  "means": {
+    "TD3_robotics_gamma": {
+      "success %": 0.0,
+      "lifted %": 2.0,
+      "mean reward": -0.11199374286399466
+    },
+    "TD3_more_exploration": {
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "mean reward": -2.6361990059559033
+    },
+    "TD3_default_like": {
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "mean reward": -3.946589151642583
+    }
+  }
+}

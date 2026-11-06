@@ -1,0 +1,119 @@
+10-24 13:44:33 selection stage: 36 runs to do
+10-24 13:44:33 started: selection/SAC_default_like_seed21 | running 1 | free 3.7 GB
+10-24 13:45:33 started: selection/SAC_default_like_seed22 | running 2 | free 3.4 GB
+10-24 13:46:33 started: selection/SAC_default_like_seed23 | running 3 | free 3.1 GB
+10-24 13:47:43 started: selection/SAC_robotics_gamma_seed21 | running 4 | free 3.2 GB
+10-24 13:48:43 started: selection/SAC_robotics_gamma_seed22 | running 5 | free 3.0 GB
+10-24 15:13:42 done: selection/SAC_default_like_seed21 (exit 0) | free 3.7 GB
+10-24 15:13:42 started: selection/SAC_robotics_gamma_seed23 | running 5 | free 3.7 GB
+10-24 15:14:47 done: selection/SAC_default_like_seed22 (exit 0) | free 3.7 GB
+10-24 15:14:47 started: selection/SAC_more_exploration_seed21 | running 5 | free 3.7 GB
+10-24 15:15:27 done: selection/SAC_default_like_seed23 (exit 0) | free 4.1 GB
+10-24 15:15:47 started: selection/SAC_more_exploration_seed22 | running 5 | free 3.9 GB
+10-24 15:21:13 done: selection/SAC_robotics_gamma_seed21 (exit 0) | free 3.5 GB
+10-24 15:21:13 started: selection/SAC_more_exploration_seed23 | running 5 | free 3.5 GB
+10-24 15:23:18 done: selection/SAC_robotics_gamma_seed22 (exit 0) | free 4.3 GB
+10-24 15:23:18 started: selection/TD3_default_like_seed21 | running 5 | free 4.3 GB
+10-24 16:32:41 done: selection/TD3_default_like_seed21 (exit 0) | free 3.8 GB
+10-24 16:32:41 started: selection/TD3_default_like_seed22 | running 5 | free 3.8 GB
+10-24 16:45:47 done: selection/SAC_robotics_gamma_seed23 (exit 0) | free 3.2 GB
+10-24 16:45:47 started: selection/TD3_default_like_seed23 | running 5 | free 3.2 GB
+10-24 16:45:57 done: selection/SAC_more_exploration_seed21 (exit 0) | free 3.9 GB
+10-24 16:46:37 done: selection/SAC_more_exploration_seed22 (exit 0) | free 4.3 GB
+10-24 16:46:47 started: selection/TD3_robotics_gamma_seed21 | running 4 | free 4.2 GB
+10-24 16:47:47 started: selection/TD3_robotics_gamma_seed22 | running 5 | free 4.0 GB
+10-24 16:50:27 done: selection/SAC_more_exploration_seed23 (exit 0) | free 4.3 GB
+10-24 16:50:27 started: selection/TD3_robotics_gamma_seed23 | running 5 | free 4.3 GB
+10-24 17:34:55 done: selection/TD3_default_like_seed22 (exit 0) | free 4.0 GB
+10-24 17:34:55 started: selection/TD3_more_exploration_seed21 | running 5 | free 4.0 GB
+10-24 17:48:50 done: selection/TD3_default_like_seed23 (exit 0) | free 3.5 GB
+10-24 17:48:50 started: selection/TD3_more_exploration_seed22 | running 5 | free 3.5 GB
+10-24 17:51:25 done: selection/TD3_robotics_gamma_seed21 (exit 0) | free 3.9 GB
+10-24 17:51:25 started: selection/TD3_more_exploration_seed23 | running 5 | free 3.9 GB
+10-24 17:54:26 done: selection/TD3_robotics_gamma_seed22 (exit 0) | free 4.2 GB
+10-24 17:54:26 started: selection/PPO_default_like_seed21 | running 5 | free 4.2 GB
+10-24 17:56:11 done: selection/TD3_robotics_gamma_seed23 (exit 0) | free 3.9 GB
+10-24 17:56:11 started: selection/PPO_default_like_seed22 | running 5 | free 3.9 GB
+10-24 18:23:32 done: selection/PPO_default_like_seed21 (exit 0) | free 3.7 GB
+10-24 18:23:32 started: selection/PPO_default_like_seed23 | running 5 | free 3.7 GB
+10-24 18:27:22 done: selection/PPO_default_like_seed22 (exit 0) | free 3.4 GB
+10-24 18:27:22 started: selection/PPO_small_lr_seed21 | running 5 | free 3.4 GB
+10-24 18:38:23 done: selection/TD3_more_exploration_seed21 (exit 0) | free 4.0 GB
+10-24 18:38:23 started: selection/PPO_small_lr_seed22 | running 5 | free 4.0 GB
+10-24 18:52:49 done: selection/TD3_more_exploration_seed22 (exit 0) | free 4.0 GB
+10-24 18:52:49 started: selection/PPO_small_lr_seed23 | running 5 | free 4.0 GB
+10-24 18:54:54 done: selection/PPO_default_like_seed23 (exit 0) | free 3.8 GB
+10-24 18:54:54 started: selection/PPO_more_exploration_seed21 | running 5 | free 3.8 GB
+10-24 18:55:24 done: selection/TD3_more_exploration_seed23 (exit 0) | free 4.2 GB
+10-24 18:55:54 started: selection/PPO_more_exploration_seed22 | running 5 | free 4.1 GB
+10-24 18:58:00 done: selection/PPO_small_lr_seed21 (exit 0) | free 4.1 GB
+10-24 18:58:00 started: selection/PPO_more_exploration_seed23 | running 5 | free 4.1 GB
+10-24 19:08:30 done: selection/PPO_small_lr_seed22 (exit 0) | free 3.8 GB
+10-24 19:08:30 started: selection/PPO_default_like+norm_seed21 | running 5 | free 3.8 GB
+10-24 19:20:26 done: selection/PPO_small_lr_seed23 (exit 0) | free 3.3 GB
+10-24 19:20:26 started: selection/PPO_default_like+norm_seed22 | running 5 | free 3.3 GB
+10-24 19:20:46 done: selection/PPO_more_exploration_seed21 (exit 0) | free 3.3 GB
+10-24 19:21:26 started: selection/PPO_default_like+norm_seed23 | running 5 | free 3.3 GB
+10-24 19:24:16 done: selection/PPO_more_exploration_seed22 (exit 0) | free 3.0 GB
+10-24 19:24:16 started: selection/PPO_small_lr+norm_seed21 | running 5 | free 3.0 GB
+10-24 19:24:31 done: selection/PPO_more_exploration_seed23 (exit 0) | free 3.2 GB
+10-24 19:25:16 started: selection/PPO_small_lr+norm_seed22 | running 5 | free 3.0 GB
+10-24 19:36:37 done: selection/PPO_default_like+norm_seed21 (exit 0) | free 4.0 GB
+10-24 19:36:37 started: selection/PPO_small_lr+norm_seed23 | running 5 | free 4.0 GB
+10-24 19:50:42 done: selection/PPO_default_like+norm_seed22 (exit 0) | free 4.5 GB
+10-24 19:50:42 done: selection/PPO_default_like+norm_seed23 (exit 0) | free 4.5 GB
+10-24 19:50:42 started: selection/PPO_more_exploration+norm_seed21 | running 4 | free 4.5 GB
+10-24 19:51:42 started: selection/PPO_more_exploration+norm_seed22 | running 5 | free 3.8 GB
+10-24 19:52:48 done: selection/PPO_small_lr+norm_seed21 (exit 0) | free 4.2 GB
+10-24 19:52:48 started: selection/PPO_more_exploration+norm_seed23 | running 5 | free 4.2 GB
+10-24 19:54:28 done: selection/PPO_small_lr+norm_seed22 (exit 0) | free 4.1 GB
+10-24 20:04:48 done: selection/PPO_small_lr+norm_seed23 (exit 0) | free 3.7 GB
+10-24 20:14:44 done: selection/PPO_more_exploration+norm_seed21 (exit 0) | free 4.0 GB
+10-24 20:17:54 done: selection/PPO_more_exploration+norm_seed22 (exit 0) | free 4.0 GB
+10-24 20:18:04 done: selection/PPO_more_exploration+norm_seed23 (exit 0) | free 4.2 GB
+10-24 20:18:10 SAC: selected SAC configuration: SAC_robotics_gamma  (saved results/selection/selected_SAC.json)
+10-24 20:18:11 TD3: selected TD3 configuration: TD3_robotics_gamma  (saved results/selection/selected_TD3.json)
+10-24 20:18:12 PPO: selected PPO configuration: PPO_small_lr  (saved results/selection/selected_PPO.json)
+10-24 20:18:13 PPO + norm: selected PPO configuration: PPO_small_lr  (saved results_ppo_norm/selection/selected_PPO.json)
+10-24 20:18:13 final runs: 20 runs to do
+10-24 20:18:13 started: final/SAC_robotics_gamma_seed31 | running 1 | free 4.5 GB
+10-24 20:19:13 started: final/SAC_robotics_gamma_seed32 | running 2 | free 4.1 GB
+10-24 20:20:13 started: final/SAC_robotics_gamma_seed33 | running 3 | free 3.8 GB
+10-24 20:21:13 started: final/SAC_robotics_gamma_seed34 | running 4 | free 3.5 GB
+10-24 20:22:13 started: final/SAC_robotics_gamma_seed35 | running 5 | free 3.5 GB
+10-24 21:46:43 done: final/SAC_robotics_gamma_seed31 (exit 0) | free 3.6 GB
+10-24 21:46:43 started: final/TD3_robotics_gamma_seed31 | running 5 | free 3.6 GB
+10-24 21:49:33 done: final/SAC_robotics_gamma_seed32 (exit 0) | free 4.2 GB
+10-24 21:49:33 done: final/SAC_robotics_gamma_seed34 (exit 0) | free 4.2 GB
+10-24 21:49:33 started: final/TD3_robotics_gamma_seed32 | running 4 | free 4.2 GB
+10-24 21:50:33 done: final/SAC_robotics_gamma_seed35 (exit 0) | free 4.2 GB
+10-24 21:50:33 started: final/TD3_robotics_gamma_seed33 | running 4 | free 4.2 GB
+10-24 21:51:33 started: final/TD3_robotics_gamma_seed34 | running 5 | free 3.9 GB
+10-24 21:51:58 done: final/SAC_robotics_gamma_seed33 (exit 0) | free 4.3 GB
+10-24 21:52:33 started: final/TD3_robotics_gamma_seed35 | running 5 | free 4.2 GB
+10-24 22:53:42 done: final/TD3_robotics_gamma_seed31 (exit 0) | free 3.2 GB
+10-24 22:53:42 started: final/PPO_small_lr_seed31 | running 5 | free 3.2 GB
+10-24 22:56:57 done: final/TD3_robotics_gamma_seed32 (exit 0) | free 3.2 GB
+10-24 22:56:57 started: final/PPO_small_lr_seed32 | running 5 | free 3.2 GB
+10-24 22:59:22 done: final/TD3_robotics_gamma_seed33 (exit 0) | free 3.1 GB
+10-24 22:59:22 started: final/PPO_small_lr_seed33 | running 5 | free 3.1 GB
+10-24 22:59:47 done: final/TD3_robotics_gamma_seed35 (exit 0) | free 3.2 GB
+10-24 23:00:27 done: final/TD3_robotics_gamma_seed34 (exit 0) | free 3.5 GB
+10-24 23:00:27 started: final/PPO_small_lr_seed34 | running 4 | free 3.5 GB
+10-24 23:01:27 started: final/PPO_small_lr_seed35 | running 5 | free 3.5 GB
+10-24 23:21:53 done: final/PPO_small_lr_seed31 (exit 0) | free 3.7 GB
+10-24 23:21:53 started: final/PPO_small_lr+norm_seed31 | running 5 | free 3.7 GB
+10-24 23:24:44 done: final/PPO_small_lr_seed32 (exit 0) | free 3.8 GB
+10-24 23:24:44 started: final/PPO_small_lr+norm_seed32 | running 5 | free 3.8 GB
+10-24 23:27:14 done: final/PPO_small_lr_seed34 (exit 0) | free 3.6 GB
+10-24 23:27:14 started: final/PPO_small_lr+norm_seed33 | running 5 | free 3.6 GB
+10-24 23:27:19 done: final/PPO_small_lr_seed33 (exit 0) | free 3.4 GB
+10-24 23:27:54 done: final/PPO_small_lr_seed35 (exit 0) | free 3.9 GB
+10-24 23:28:14 started: final/PPO_small_lr+norm_seed34 | running 4 | free 3.7 GB
+10-24 23:29:14 started: final/PPO_small_lr+norm_seed35 | running 5 | free 3.4 GB
+10-24 23:47:55 done: final/PPO_small_lr+norm_seed31 (exit 0) | free 3.3 GB
+10-24 23:51:35 done: final/PPO_small_lr+norm_seed32 (exit 0) | free 4.1 GB
+10-24 23:53:40 done: final/PPO_small_lr+norm_seed33 (exit 0) | free 4.0 GB
+10-24 23:54:00 done: final/PPO_small_lr+norm_seed34 (exit 0) | free 4.2 GB
+10-24 23:54:51 done: final/PPO_small_lr+norm_seed35 (exit 0) | free 4.2 GB
+10-24 23:54:56 all finished in 10.2 h

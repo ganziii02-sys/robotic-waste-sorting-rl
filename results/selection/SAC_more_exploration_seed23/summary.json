@@ -1,0 +1,578 @@
+{
+  "protocol": "3H-final-v2",
+  "smoke test (not a result)": false,
+  "config": "SAC_more_exploration",
+  "algorithm": "SAC",
+  "observation and reward normalisation": false,
+  "settings": {
+    "learning_rate": 0.0003,
+    "buffer_size": 1000000,
+    "learning_starts": 2000,
+    "batch_size": 256,
+    "gamma": 0.98,
+    "tau": 0.01,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "ent_coef": "auto",
+    "target_entropy": -2.0
+  },
+  "stage": "selection",
+  "seed": 23,
+  "steps": 1000000,
+  "training minutes": 84.38282701180044,
+  "test seeds": [
+    100,
+    149
+  ],
+  "machine": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "processor": "arm64",
+    "python": "3.11.16",
+    "pybullet": "3.2.7",
+    "panda-gym": "3.0.7",
+    "stable-baselines3": "2.9.0",
+    "gymnasium": "1.3.0",
+    "torch": "2.14.1",
+    "numpy": "1.26.4"
+  },
+  "curriculum stages passed": [
+    {
+      "passed": "above_bin",
+      "own step": 1604
+    },
+    {
+      "passed": "in_hand",
+      "own step": 103565
+    },
+    {
+      "passed": "pre_grasp",
+      "own step": 126592
+    }
+  ],
+  "test: nominal": {
+    "success %": 64.0,
+    "reached %": 72.0,
+    "lifted %": 68.0,
+    "failure %": 4.0,
+    "failed grasp %": 8.0,
+    "mean reward": 8.504354870076831,
+    "mean length": 49.66,
+    "regrasps/ep": 0.18,
+    "success by item %": {
+      "004_sugar_box": 100.0,
+      "005_tomato_soup_can": 25.0,
+      "006_mustard_bottle": 50.0,
+      "009_gelatin_box": 100.0,
+      "010_potted_meat_can": 14.285714285714285,
+      "065-a_cups": 50.0,
+      "065-c_cups": 50.0
+    },
+    "outcomes": {
+      "success": 32,
+      "timeout": 16,
+      "dropped": 1,
+      "unlifted_in_hole": 1
+    },
+    "movement (successful episodes)": {
+      "steps": 25.0,
+      "path m": 0.9520613670056027,
+      "gripper switches": 3.34375,
+      "max lift m": 0.10660688183270395
+    },
+    "movement (all episodes)": {
+      "path m": 0.7984196844744348,
+      "gripper switches": 3.02
+    }
+  },
+  "selection: nominal (seeds 1000-1049)": {
+    "success %": 42.0,
+    "reached %": 56.00000000000001,
+    "lifted %": 54.0,
+    "failure %": 2.0,
+    "failed grasp %": 4.0,
+    "mean reward": 5.871473103948825,
+    "mean length": 68.3,
+    "regrasps/ep": 0.08,
+    "success by item %": {
+      "004_sugar_box": 66.66666666666666,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 50.0,
+      "009_gelatin_box": 83.33333333333334,
+      "010_potted_meat_can": 22.22222222222222,
+      "065-a_cups": 25.0,
+      "065-c_cups": 0.0
+    },
+    "outcomes": {
+      "timeout": 28,
+      "success": 21,
+      "unlifted_in_hole": 1
+    },
+    "movement (successful episodes)": {
+      "steps": 28.095238095238095,
+      "path m": 1.030461023557091,
+      "gripper switches": 3.619047619047619,
+      "max lift m": 0.11314450630119868
+    },
+    "movement (all episodes)": {
+      "path m": 0.7653077964915745,
+      "gripper switches": 2.9
+    }
+  },
+  "test: training randomisation": {
+    "success %": 66.0,
+    "reached %": 70.0,
+    "lifted %": 68.0,
+    "failure %": 2.0,
+    "failed grasp %": 4.0,
+    "mean reward": 9.22468243893496,
+    "mean length": 48.66,
+    "regrasps/ep": 0.18,
+    "success by item %": {
+      "004_sugar_box": 83.33333333333334,
+      "005_tomato_soup_can": 75.0,
+      "006_mustard_bottle": 33.33333333333333,
+      "009_gelatin_box": 100.0,
+      "010_potted_meat_can": 28.57142857142857,
+      "065-a_cups": 25.0,
+      "065-c_cups": 62.5
+    },
+    "outcomes": {
+      "success": 33,
+      "timeout": 16,
+      "dropped": 1
+    },
+    "movement (successful episodes)": {
+      "steps": 24.545454545454547,
+      "path m": 0.9445751736372813,
+      "gripper switches": 3.242424242424242,
+      "max lift m": 0.10175299373540012
+    },
+    "movement (all episodes)": {
+      "path m": 0.7951062820564445,
+      "gripper switches": 2.76
+    }
+  },
+  "test: heavy (mass x2)": {
+    "success %": 70.0,
+    "reached %": 72.0,
+    "lifted %": 70.0,
+    "failure %": 0.0,
+    "failed grasp %": 4.0,
+    "mean reward": 9.598751153513223,
+    "mean length": 47.14,
+    "regrasps/ep": 0.12,
+    "success by item %": {
+      "004_sugar_box": 100.0,
+      "005_tomato_soup_can": 25.0,
+      "006_mustard_bottle": 66.66666666666666,
+      "009_gelatin_box": 100.0,
+      "010_potted_meat_can": 28.57142857142857,
+      "065-a_cups": 50.0,
+      "065-c_cups": 62.5
+    },
+    "outcomes": {
+      "success": 35,
+      "timeout": 15
+    },
+    "movement (successful episodes)": {
+      "steps": 24.485714285714284,
+      "path m": 0.9665834385826295,
+      "gripper switches": 3.4285714285714284,
+      "max lift m": 0.1131157280078956
+    },
+    "movement (all episodes)": {
+      "path m": 0.7765243642191895,
+      "gripper switches": 2.8
+    }
+  },
+  "test: slippery (friction x0.5)": {
+    "success %": 54.0,
+    "reached %": 72.0,
+    "lifted %": 57.99999999999999,
+    "failure %": 16.0,
+    "failed grasp %": 12.0,
+    "mean reward": 6.474026744991428,
+    "mean length": 46.02,
+    "regrasps/ep": 0.06,
+    "success by item %": {
+      "004_sugar_box": 100.0,
+      "005_tomato_soup_can": 25.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 100.0,
+      "010_potted_meat_can": 14.285714285714285,
+      "065-a_cups": 25.0,
+      "065-c_cups": 37.5
+    },
+    "outcomes": {
+      "success": 27,
+      "timeout": 15,
+      "dropped": 7,
+      "unlifted_in_hole": 1
+    },
+    "movement (successful episodes)": {
+      "steps": 22.85185185185185,
+      "path m": 0.912539492504692,
+      "gripper switches": 3.1481481481481484,
+      "max lift m": 0.11173535331531807
+    },
+    "movement (all episodes)": {
+      "path m": 0.7403204477345626,
+      "gripper switches": 2.92
+    }
+  },
+  "test: large (size x1.2)": {
+    "success %": 57.99999999999999,
+    "reached %": 72.0,
+    "lifted %": 70.0,
+    "failure %": 2.0,
+    "failed grasp %": 10.0,
+    "mean reward": 8.361850957775815,
+    "mean length": 55.84,
+    "regrasps/ep": 0.18,
+    "success by item %": {
+      "004_sugar_box": 83.33333333333334,
+      "005_tomato_soup_can": 0.0,
+      "006_mustard_bottle": 0.0,
+      "009_gelatin_box": 100.0,
+      "010_potted_meat_can": 0.0,
+      "065-a_cups": 100.0,
+      "065-c_cups": 62.5
+    },
+    "outcomes": {
+      "success": 29,
+      "timeout": 20,
+      "dropped": 1
+    },
+    "movement (successful episodes)": {
+      "steps": 24.862068965517242,
+      "path m": 0.9804464849568784,
+      "gripper switches": 3.413793103448276,
+      "max lift m": 0.11214472430533376
+    },
+    "movement (all episodes)": {
+      "path m": 0.8377085823291733,
+      "gripper switches": 2.74
+    }
+  },
+  "test: small (size x0.8)": {
+    "success %": 62.0,
+    "reached %": 66.0,
+    "lifted %": 66.0,
+    "failure %": 4.0,
+    "failed grasp %": 12.0,
+    "mean reward": 8.396490325110381,
+    "mean length": 49.78,
+    "regrasps/ep": 0.14,
+    "success by item %": {
+      "004_sugar_box": 100.0,
+      "005_tomato_soup_can": 25.0,
+      "006_mustard_bottle": 66.66666666666666,
+      "009_gelatin_box": 100.0,
+      "010_potted_meat_can": 14.285714285714285,
+      "065-a_cups": 50.0,
+      "065-c_cups": 25.0
+    },
+    "outcomes": {
+      "success": 31,
+      "timeout": 17,
+      "dropped": 2
+    },
+    "movement (successful episodes)": {
+      "steps": 23.774193548387096,
+      "path m": 0.9113676534186756,
+      "gripper switches": 3.193548387096774,
+      "max lift m": 0.1083635089378203
+    },
+    "movement (all episodes)": {
+      "path m": 0.708642867339688,
+      "gripper switches": 2.34
+    }
+  },
+  "tray clearing (20 trays, nominal)": {
+    "3 items": {
+      "per-item success %": 50.847457627118644,
+      "whole-tray success %": 10.0,
+      "items sorted per tray": 1.5,
+      "items attempted per tray": 2.95,
+      "items placed per tray": 3.0
+    },
+    "4 items": {
+      "per-item success %": 44.15584415584416,
+      "whole-tray success %": 0.0,
+      "items sorted per tray": 1.7,
+      "items attempted per tray": 3.85,
+      "items placed per tray": 4.0
+    }
+  },
+  "dense tray clearing (20 trays, nominal)": {
+    "3 items": {
+      "per-item success %": 31.57894736842105,
+      "whole-tray success %": 0.0,
+      "items sorted per tray": 0.9,
+      "items attempted per tray": 2.85,
+      "items placed per tray": 3.0
+    },
+    "4 items": {
+      "per-item success %": 32.87671232876712,
+      "whole-tray success %": 0.0,
+      "items sorted per tray": 1.2,
+      "items attempted per tray": 3.65,
+      "items placed per tray": 4.0
+    }
+  },
+  "checkpoint test success (nominal)": [
+    {
+      "steps": 25000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 52.0
+    },
+    {
+      "steps": 50000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 48.0
+    },
+    {
+      "steps": 75000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 32.0
+    },
+    {
+      "steps": 100000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 26.0
+    },
+    {
+      "steps": 125000,
+      "success %": 0.0,
+      "lifted %": 2.0,
+      "reached %": 40.0
+    },
+    {
+      "steps": 150000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 48.0
+    },
+    {
+      "steps": 175000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 62.0
+    },
+    {
+      "steps": 200000,
+      "success %": 0.0,
+      "lifted %": 2.0,
+      "reached %": 46.0
+    },
+    {
+      "steps": 225000,
+      "success %": 0.0,
+      "lifted %": 2.0,
+      "reached %": 28.000000000000004
+    },
+    {
+      "steps": 250000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 275000,
+      "success %": 0.0,
+      "lifted %": 2.0,
+      "reached %": 12.0
+    },
+    {
+      "steps": 300000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 32.0
+    },
+    {
+      "steps": 325000,
+      "success %": 2.0,
+      "lifted %": 2.0,
+      "reached %": 24.0
+    },
+    {
+      "steps": 350000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 2.0
+    },
+    {
+      "steps": 375000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 6.0
+    },
+    {
+      "steps": 400000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 28.000000000000004
+    },
+    {
+      "steps": 425000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 24.0
+    },
+    {
+      "steps": 450000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 18.0
+    },
+    {
+      "steps": 475000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 0.0
+    },
+    {
+      "steps": 500000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 18.0
+    },
+    {
+      "steps": 525000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 16.0
+    },
+    {
+      "steps": 550000,
+      "success %": 2.0,
+      "lifted %": 2.0,
+      "reached %": 14.000000000000002
+    },
+    {
+      "steps": 575000,
+      "success %": 0.0,
+      "lifted %": 0.0,
+      "reached %": 10.0
+    },
+    {
+      "steps": 600000,
+      "success %": 2.0,
+      "lifted %": 6.0,
+      "reached %": 34.0
+    },
+    {
+      "steps": 625000,
+      "success %": 8.0,
+      "lifted %": 8.0,
+      "reached %": 48.0
+    },
+    {
+      "steps": 650000,
+      "success %": 14.000000000000002,
+      "lifted %": 14.000000000000002,
+      "reached %": 38.0
+    },
+    {
+      "steps": 675000,
+      "success %": 8.0,
+      "lifted %": 18.0,
+      "reached %": 52.0
+    },
+    {
+      "steps": 700000,
+      "success %": 22.0,
+      "lifted %": 30.0,
+      "reached %": 48.0
+    },
+    {
+      "steps": 725000,
+      "success %": 24.0,
+      "lifted %": 28.000000000000004,
+      "reached %": 46.0
+    },
+    {
+      "steps": 750000,
+      "success %": 22.0,
+      "lifted %": 28.000000000000004,
+      "reached %": 44.0
+    },
+    {
+      "steps": 775000,
+      "success %": 30.0,
+      "lifted %": 34.0,
+      "reached %": 57.99999999999999
+    },
+    {
+      "steps": 800000,
+      "success %": 38.0,
+      "lifted %": 44.0,
+      "reached %": 64.0
+    },
+    {
+      "steps": 825000,
+      "success %": 36.0,
+      "lifted %": 44.0,
+      "reached %": 54.0
+    },
+    {
+      "steps": 850000,
+      "success %": 34.0,
+      "lifted %": 50.0,
+      "reached %": 62.0
+    },
+    {
+      "steps": 875000,
+      "success %": 50.0,
+      "lifted %": 68.0,
+      "reached %": 86.0
+    },
+    {
+      "steps": 900000,
+      "success %": 52.0,
+      "lifted %": 62.0,
+      "reached %": 74.0
+    },
+    {
+      "steps": 925000,
+      "success %": 72.0,
+      "lifted %": 78.0,
+      "reached %": 86.0
+    },
+    {
+      "steps": 950000,
+      "success %": 70.0,
+      "lifted %": 78.0,
+      "reached %": 86.0
+    },
+    {
+      "steps": 975000,
+      "success %": 48.0,
+      "lifted %": 52.0,
+      "reached %": 52.0
+    },
+    {
+      "steps": 1000000,
+      "success %": 62.0,
+      "lifted %": 68.0,
+      "reached %": 72.0
+    }
+  ],
+  "test success from curriculum starts (30 seeds)": {
+    "above_bin": 96.66666666666667,
+    "in_hand": 90.0,
+    "pre_grasp": 96.66666666666667,
+    "above_item": 66.66666666666666,
+    "above_item_turn": 63.33333333333333
+  },
+  "first close next to the item (nominal test)": {
+    "episodes with a close next to the item": 36,
+    "median yaw error deg (non-round items)": 6.66878070458851,
+    "median xy offset cm": 1.381196784665751,
+    "median height error cm": -1.4046613978042495
+  }
+}
